@@ -1,0 +1,129 @@
+/* reset */
+
+* {
+   box-sizing: border-box;
+}
+
+
+html, body {
+	height:100%;
+	line-height: 1.5;
+}
+
+html, body, h1, h2, p, ul, section {
+  margin:0;
+  padding:0;
+
+}
+
+/* font-family, transform */
+
+h1, h2, a {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+
+p {
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+/* btn */
+
+.btn {
+	padding:.2em 1em;
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	background-color: black;
+}
+
+.btn:hover {
+	background-color: #ffa800 !important;
+}
+
+/* section flexbox */
+
+section {
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+/* hero */
+
+.hero {
+	color:white;
+	min-height:60%;
+}
+
+.hero h1 {
+	font-size: 8em;
+}
+
+.hero p {
+	font-size: .7em;
+}
+
+.hero .btn {
+	font-size: 1em;
+	margin-top: 1.5em;
+}
+
+/* background image */
+
+#main {
+	background:url(../img/bg.jpg) center center no-repeat fixed;
+	background-size: cover;
+}
+
+#feature {
+	background:url(../img/feature.jpg) center center no-repeat fixed;
+	background-size: cover;
+}
+
+#footer {
+	background:url(../img/footer.jpg) center center no-repeat fixed;
+	background-size: cover;
+}
+
+
+/* supporting */
+
+.supporting {
+	background-color: black;
+	min-height: 40%;
+}
+
+.supporting h2 {
+	color: #ffa800;
+}
+
+.supporting p {
+	color: white;
+	font-size:.5em;
+}
+
+.supporting .btn {
+	margin-top:1em;
+	font-size: 1em;
+	background-color:white;
+	color: black;
+}
+
+
+/* media flexbox */
+
+@media screen and (min-width:40em){
+	.supporting {
+		flex-direction:row;
+		justify-content:space-around;
+		padding:0 20%;
+	}
+
+	.supporting div {
+		flex:0 1 calc(33%-1em);
+	}
+}

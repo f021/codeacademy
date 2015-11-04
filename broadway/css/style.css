@@ -1,0 +1,180 @@
+* {
+   box-sizing: border-box;
+}
+
+html, body, h1, p, ul {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  background: url(../img/bg.jpg) center center no-repeat fixed;
+  background-size:cover;
+}
+
+
+h1, .btn {
+  text-transform: uppercase;
+}
+
+.out-wrap {
+  display:flex;
+  flex-direction:column;
+}
+
+/* button */
+
+.btn {
+  padding: 10px 20px;
+  display:inline-block;
+  text-decoration:none;
+  color:white;
+}
+
+
+/* menu */
+
+.menu ul {
+	list-style-type:none;
+	background-color:#333333;
+	padding:0 5em;
+}
+
+
+.menu li a {
+	display:block;
+	color: white;
+	text-decoration: none;
+	padding: .6em 1em;
+	text-transform: uppercase;
+}
+
+.menu li a:hover {
+	background-color:#444444;
+}
+
+
+/* cards */
+
+.cards {
+	text-align:center;
+}
+
+.cards ul {
+	list-style-type:none;
+	display:flex;
+	flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:0 10%;
+}
+
+.cards li {
+	flex:1 0 10%;
+}
+
+.cards h1 {
+	padding:.5em 0;
+	font-size:1.5em;
+	text-transform: uppercase;
+}
+
+.cards p {
+	padding-bottom:3em;
+	font-size:.9em;
+	font-weight: 400;
+}
+
+.cards img {
+	height:3em;
+}
+
+.cards .btn {
+	border:1px solid #333;
+	color:#333;
+	letter-spacing: .2em;
+	transition:all .5s ease-out;
+}
+
+
+.cards .btn:hover {
+	border:1px solid red;
+	color:red;
+}
+
+
+/* header */
+
+
+/* hero */
+
+#hero {
+	min-height: 100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+#hero h1 {
+	font-size: 5em;
+	padding-bottom: 1.5em;
+	text-align:center;
+}
+
+#hero .btn {
+	background-color: red;
+	transition: all .5s ease-out;
+}
+
+#hero .btn:hover {
+	background-color: white;
+	color:red;
+}
+
+/* supporting */
+
+#supporting {
+	background-color:white;
+	padding: 5em 0;
+}
+
+
+
+/* footer */
+
+#footer {
+	background-color: #333333;
+	color:white;
+	text-align:left;
+	padding:0 5em;
+}
+
+#footer p {
+	padding: 1.6em 1em;
+}
+
+/* media */
+
+@media screen and (min-width:30em) {
+  .single-nav ul {
+		display:flex;
+		justify-content:flex-start;
+  }
+
+  .single-nav li {
+	text-align:center;
+  }
+
+  .cards ul {
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+  }
+
+}
